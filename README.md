@@ -44,6 +44,6 @@ As per the documentation, there are 3 ways to configure domain services
 
 For this blog post I will be provisioning Azure Active Directory Domain Services
 
-[![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/http%3A%2F%2Fgithub.com%2Frawatsudhir1%2FWVD%2Fblob%2Fmaster%2FDeploy_Microsoft_DomainServices%2Ftemplate.json)
+[![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fsudhirawarmscripts.blob.core.windows.net%2Farmscripts%2Ftemplate.json)
 
 
