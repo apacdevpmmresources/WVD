@@ -24,15 +24,26 @@ Step 1:- Setup a user account and assign role assignment
 * Click Users and then "+ New User"
 * Add new user details
 ![Add New User](Images/2-0.png)  
+* Click Create
+* Once user is created, let's assign role assignment 
+* Click Assigned roles
+ ![Assign Role](Images/2.png)
+ * Click "+ Add assignments" and assign "User administrator" role
+ ![Assigned Role](Images/3.png)
 
 
-Windows Virtual Desktop Setup Instruction
+Step 2:- Provision Azure Active Directory Domain Services
 
+As per the documentation, there are 3 ways to configure domain services
 
- Deploy a domain controller in a hosted Windows Server VM running in Azure.
+ 1 Deploy a domain controller in a hosted Windows Server VM running in Azure
+
+ 2 Provision Azure Active Directory Domain Services 
    
-   Provision Azure Active Directory Domain Services. 
-   
-   Connect your network to Azure and establish a VPN between your datacenter and Azure.
+ 3 Connect your network to Azure and establish a VPN between your datacenter and Azure
+
+For this blog post I will be provisioning Azure Active Directory Domain Services
 
 [![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https://github.com/rawatsudhir1/WVD/blob/master/Deploy_Microsoft_DomainServices/template.json)
+
+
