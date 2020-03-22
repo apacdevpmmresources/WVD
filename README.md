@@ -23,7 +23,7 @@ Step 1:- Setup a user account and assign role assignment
 * Once loggedin, click Azure Active Directory from left side pane
 * Click Users and then "+ New User"
 * Add new user details
-[Add New User](Images/2-0.png)  
+![Add New User](Images/2-0.png)  
 
 
 Windows Virtual Desktop Setup Instruction
