@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2017-06-01"
+        },
+        "sku": {
+            "value": "Enterprise"
+        },
+        "domainConfigurationType": {
+            "value": "FullySynced"
+        },
+        "domainName": {
+            "value": "XXXXdomain.onmicrosoft.com"
+        },
+        "filteredSync": {
+            "value": "Disabled"
+        },
+        "location": {
+            "value": "westus"
+        },
+        "notificationSettings": {
+            "value": {
+                "notifyGlobalAdmins": "Enabled",
+                "notifyDcAdmins": "Enabled",
+                "additionalRecipients": []
+            }
+        },
+        "subnetName": {
+            "value": "XXXX-subnet"
+        },
+        "vnetName": {
+            "value": "XXXX-vnet"
+        },
+        "vnetAddressPrefixes": {
+            "value": [
+                "10.0.0.0/24"
+            ]
+        },
+        "subnetAddressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "nsgName": {
+            "value": "XXXX-nsg"
+        }
+    }
+}
