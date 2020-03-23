@@ -26,7 +26,7 @@ COVID-19 pandemic made many organization to let their employee work from home. T
 
 # Windows Virtual Desktop Pricing
 
-      Please click [here](https://azure.microsoft.com/en-us/pricing/calculator/?service=virtual-desktop#virtual-desktop632ccf50-9f35-4e0f-ab0d-6deb564d5300) for WVD pricing
+* Please click [here](https://azure.microsoft.com/en-us/pricing/calculator/?service=virtual-desktop#virtual-desktop632ccf50-9f35-4e0f-ab0d-6deb564d5300) for WVD pricing
 
 
 # Provision Windows Virtual Desktop in Azure
