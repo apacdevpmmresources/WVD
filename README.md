@@ -86,8 +86,64 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![CopyTenantID](Images/9.png)
 
-* Goto https://rdweb.wvd.microsoft.com  
+* Goto https://rdweb.wvd.microsoft.com and provide consent to Windows Virtual Desktop ( "Server App" and "Client App" )
+
+    ![Consent](Images/10.png)
+
+* Once consent is given, goto Azure Active Directory then "Enterprise applications"
+
+    ![ConsentGiven](Images/11.png)
+
+* Run Windows PowerShell ISE as administratre
+
+    ```
+        Import-module Microsoft.Rdinfra.RdPowershell
+        Install-module Microsoft.Rdinfra.RdPowershell
+        Add-RdsAccount –DeploymentURL "https://rdbroker.wvd.microsoft.com"
+        New-RdsTenant -Name <TenantName> -AadTenantID <DirectoryID> -AzureSubscriptionID <SubscriptionID>
+
+        Note:- Provide any name for Tenant, copy DirectoryID/TenantID from Azure Active Directory and SubscriptionID from Azure portal 
+    ```
+* Execute the command (Sign in with the credentials for a user with the Tenant Creator role)
+
+    ![AddTenant](Images/12.png)
+
+* Copy tenant name
+
+### Step 4:- Deploy Windows Virtual Desktop in Azure
+
+* Goto Azure portal and search for "Windows Virtual Desktop" and Select "Windows Virtual Desktop - Provision a host pool"
+
+    ![WVD](Images/13.png)
+
+* Click Create
+
+* Provide resource group name, Host pool name, Desktop type, Default desktop users
+
+    ![WVD1](Images/14.png)
+
+```
+        Note:- Pooled:- When you want multiple users (session) to access same VM. Personal :- When one user access the VM. 
+```
+
+* Click "Next : Configure virtual machines > ". Provide Usgae Profile, Total users, VM size etc. Depending on usgae profile and Total users, Azure recommends the VM size. However you can change the VM size.
+
+    ![WVD2](Images/15.png)
+
+* Click "Next: Virtual machine settings >". Provide information as per below image (Do select Yes for "Specify domain or OU" to yes and provide the "Domain to join" created earlier). Click "Next : Windows Virtual Desktop information >" 
+
+    ![WVD3](Images/16.png)
+
+* Provide "Windows Virtual Desktop tenant name" created in ealrier step, UPN/Service principal. Click "Next : Review + create >"
+
+    ![WVD4](Images/17.png)
+
+* Once Validation pass, click Create 
+
+    ![WVD5](Images/18.png)
+
 * 
 
-* ********************
+
+
 
