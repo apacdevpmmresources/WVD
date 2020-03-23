@@ -54,7 +54,7 @@
         },
         "nsgName": {
 		    "defaultValue":"XXXX-nsg",
-            "types": "String"
+            "type": "String"
         }
     },
     "resources": [
