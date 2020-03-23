@@ -142,7 +142,6 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![WVD5](Images/18.png)
 
-* 
 
 
 
