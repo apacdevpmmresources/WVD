@@ -41,6 +41,9 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![Assigned Role](Images/3.png)
 
+```
+    Note:- You need to change the user password When you login first time 
+```
 
 ### Step 2:- Provision Azure Active Directory Domain Services
 
@@ -64,11 +67,27 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
 * It will take sometime to provision Azure Active Directory Domain Services
 
-* Once Azure AD Domain Services is created
-
     ![Progress](Images/6.png)
 
+* Once Azure AD Domain Services is created, click "Configure" for " Update DNS server settings for your virtual network"
 
+    ![Configure](Images/7.png)
+
+* Once it's done, DNS servers for virtual network will get configured
+
+    ![Configured](Images/8.png)
+
+* Copy Azure AD Domain Services like XXXXdomain.onmicrosoft.com
+
+
+### Step 3:- Provision a Windows Virtual Desktop Tenant Creator account
+
+* Copy Azure Active Directory Tenant GUID from Azure portal
+
+    ![CopyTenantID](Images/9.png)
+
+* Goto https://rdweb.wvd.microsoft.com  
+* 
 
 * ********************
 
