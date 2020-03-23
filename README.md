@@ -15,7 +15,7 @@ COVID-19 pandemic made many organization to let their employee work from home. T
     7 Maintainability 
     8 Use exisitng image from gallery or bring your own image
 
-# Azure or Office 365
+# Azure or/and Office 365
 
     - If you’re using any Microsoft 365 services, sign in to the Azure portal using the credentials for tenant. However many other serives which is required for WVD are not part of Microsoft 365 
 
