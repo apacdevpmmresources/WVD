@@ -189,4 +189,8 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![Screen9](Images/23.png)
 
+* To connect WVD from [Android mobile](https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-android)
 
+    ![WVD1](Images/24.jpg) ![WVD2](Images/25.jpg)
+    ![WVD1](Images/26.jpg) ![WVD2](Images/27.jpg)
+    ![WVD1](Images/28.jpg)
