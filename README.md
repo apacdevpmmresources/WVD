@@ -6,28 +6,33 @@ COVID-19 pandemic made many organization to let their employee work from home. T
 
 In this blog post I will be using my MSDN subscription to spin up the WVD instead of my official subscription (as I am not an administrator). That's means I already have my tenant and AAD setup. Please [use this link](https://azure.microsoft.com/en-us/free/) to spin up a new Microsoft Azure Account. 
 
-Steps to spin Windows Virtual Desktop. 
+## Steps to spin Windows Virtual Desktop. 
 
-Step 1:- Setup a user account and assign role assignment
+        Step 1:- Setup a user account and assign role assignment
 
-Step 2:- Provision Azure Active Directory Domain Services
+        Step 2:- Provision Azure Active Directory Domain Services
 
-Step 3:- Provision a Windows Virtual Desktop Tenant Creator account
+        Step 3:- Provision a Windows Virtual Desktop Tenant Creator account
 
-Step 4:- Deploy Windows Virtual Desktop in Azure
+        Step 4:- Deploy Windows Virtual Desktop in Azure
 
 
-Step 1:- Setup a user account and assign role assignment
+### Step 1:- Setup a user account and assign role assignment
 
 * Open http://portal.azure.com in a web browser
+
 * Once loggedin, click Azure Active Directory from left side pane
+
 * Click Users and then "+ New User"
+
 * Add new user details
 
     ![Add New User](Images/2-0.png)  
 
 * Click Create
+
 * Once user is created, let's assign role assignment
+
 * Click Assigned roles
 
     ![Assign Role](Images/2.png)
@@ -37,7 +42,7 @@ Step 1:- Setup a user account and assign role assignment
     ![Assigned Role](Images/3.png)
 
 
-Step 2:- Provision Azure Active Directory Domain Services
+### Step 2:- Provision Azure Active Directory Domain Services
 
     As per the documentation, there are 3 ways to configure domain services
 
