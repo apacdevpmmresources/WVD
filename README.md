@@ -42,8 +42,17 @@ As per the documentation, there are 3 ways to configure domain services
    
  3 Connect your network to Azure and establish a VPN between your datacenter and Azure
 
-For this blog post I will be provisioning Azure Active Directory Domain Services
+* I will be provisioning [Azure Active Directory Domain Services](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance).
 
 [![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frawatsudhir1%2FWVD%2Fmaster%2FDeploy_Microsoft_DomainServices%2Ftemplate.json)
+
+* Click "Deploy to Azure" 
+    ![Aetup AADDS](Images/4.png)
+* Replace XXXX with real value
+* Accept "Terms and Conditions" 
+* Click Purchase
+* It will take sometime to provision Azure Active Directory Domain Services
+    ![Progressing](Images/5.png)
+
 
 
