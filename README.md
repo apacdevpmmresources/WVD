@@ -48,7 +48,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
         1 Deploy a domain controller in a hosted Windows Server VM running in Azure
 
-        2 [xs] Provision Azure Active Directory Domain Services 
+        2 [x] Provision Azure Active Directory Domain Services 
    
         3 Connect your network to Azure and establish a VPN between your datacenter and Azure
 
