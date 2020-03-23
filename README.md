@@ -101,7 +101,10 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
         Install-module Microsoft.Rdinfra.RdPowershell
         Add-RdsAccount –DeploymentURL "https://rdbroker.wvd.microsoft.com"
         New-RdsTenant -Name <TenantName> -AadTenantID <DirectoryID> -AzureSubscriptionID <SubscriptionID>
-
+    
+    ```
+    
+    ```
         Note:- Provide any name for Tenant, copy DirectoryID/TenantID from Azure Active Directory and SubscriptionID from Azure portal 
     ```
 * Execute the command (Sign in with the credentials for a user with the Tenant Creator role)
