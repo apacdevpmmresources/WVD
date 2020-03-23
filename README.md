@@ -4,13 +4,39 @@ COVID-19 pandemic made many organization to let their employee work from home. T
 
 [Microsoft Azure Windows Virtual Desktop aka WVD](https://azure.microsoft.com/en-us/services/virtual-desktop/) is a service on Azure that could be one part of a COVID-19 response plan. With WVD, we no longer need to be concerned with the constraints of the physical hardware or a person's location.
 
-In this blog post I will be using my MSDN subscription to spin up the WVD instead of my official subscription (as I am not an administrator). That's means I already have my tenant and AAD setup. Please [use this link](https://azure.microsoft.com/en-us/free/) to spin up a new Microsoft Azure Account. 
+# Benefits of WVD 
+
+    1 Seamless multi-user Windows 10 user experience
+    2 Scalability 
+    3 Access from  anywhere. Supporting any end user device platform like Windows, Android, Mac, iOS, and HTML 5
+    4 Secure    
+    5 Cost effective
+    6 Ease of provisiong virtual desktop environment
+    7 Maintainability 
+    8 Use exisitng image from gallery or bring your own image
+
+# Azure or Office 365
+
+    - If you’re using any Microsoft 365 services, sign in to the Azure portal using the credentials for tenant. However many other serives which is required for WVD are not part of Microsoft 365 
+
+    - Microsoft 365 Business is one of the eligible plans that supports WVD, access Windows 10 Enterprise and Windows 7 Enterprise at no additional cost
+
+    - For small and trial environment, Please [use this link](https://azure.microsoft.com/en-us/free/) to spin up a new Microsoft Azure Account. Use Azure Active Directory Domain Services to sync with Azure AD. 
+
+# Windows Virtual Desktop Pricing
+
+    * Please click [here](https://azure.microsoft.com/en-us/pricing/calculator/?service=virtual-desktop#virtual-desktop632ccf50-9f35-4e0f-ab0d-6deb564d5300) for WVD pricing
+
+
+# Provision Windows Virtual Desktop in Azure
+
+In this blog post I will be using my MSDN subscription to spin up the WVD instead of my official subscription (as I am not an administrator on my offical subscription). That's means I already have my tenant and AAD setup.  
 
 ## Steps to spin Windows Virtual Desktop. 
 
         Step 1:- Setup a user account and assign role assignment
 
-        Step 2:- Provision Azure Active Directory Domain Services
+        Step 2:- Provision Azure Active Directory Domain Services + Change Password
 
         Step 3:- Provision a Windows Virtual Desktop Tenant Creator account
 
