@@ -3,40 +3,58 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "apiVersion": {
+			"defaultValue": "2017-06-01",
             "type": "String"
         },
         "sku": {
+			"defaultValue": "Enterprise",
             "type": "String"
         },
         "domainConfigurationType": {
+			"defaultValue": "FullySynced",
             "type": "String"
         },
         "domainName": {
+			"defaultValue": "XXXXdomain.onmicrosoft.com",
             "type": "String"
         },
         "filteredSync": {
+			"defaultValue": "Disabled",
             "type": "String"
         },
         "location": {
+			"defaultValue": "westus",
             "type": "String"
         },
         "notificationSettings": {
+			"defaultValue": {
+                "notifyGlobalAdmins": "Enabled",
+                "notifyDcAdmins": "Enabled",
+              "additionalRecipients": []
+            },
             "type": "Object"
         },
         "subnetName": {
+			"defaultValue": "XXXX-subnet",
             "type": "String"
         },
         "vnetName": {
+			"defaultValue": "XXXX-vnet",
             "type": "String"
         },
         "vnetAddressPrefixes": {
+			"defaultValue": [
+                "10.0.0.0/24"
+            ],
             "type": "Array"
         },
         "subnetAddressPrefix": {
+			"defaultValue": "10.0.0.0/24",
             "type": "String"
         },
         "nsgName": {
-            "type": "String"
+		"defaultValue": "XXXX-nsg",
+            "types": "String"
         }
     },
     "resources": [
