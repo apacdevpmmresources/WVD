@@ -16,6 +16,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
         Step 4:- Deploy Windows Virtual Desktop in Azure
 
+        Step 5:- Access Windows Virtual Desktop over web 
 
 ### Step 1:- Setup a user account and assign role assignment
 
@@ -42,7 +43,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
     ![Assigned Role](Images/3.png)
 
 ```
-    Note:- You need to change the user password When you login first time 
+    Note:- Let's change the password later. 
 ```
 
 ### Step 2:- Provision Azure Active Directory Domain Services
@@ -77,6 +78,12 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![Configured](Images/8.png)
 
+* Let's enable user account for Azure Active Directory Domain Services. In this case it's cloud only user which we created earlier. For other scenarios please refer [here](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance)
+
+* Goto https://myapps.microsoft.com
+
+* Login with the account created earlier. Goto the profile and reset the password.
+
 * Copy Azure AD Domain Services like XXXXdomain.onmicrosoft.com
 
 
@@ -94,6 +101,16 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![ConsentGiven](Images/11.png)
 
+* Click Windows Virtual Desktop and "Users and groups"
+    
+    ![Adduser](Images/11-1.png)
+
+* Click "+ Add user" 
+
+* Assign Tenant Creator role to the user
+
+    ![Adduser](Images/11-2.png)
+
 * Run Windows PowerShell ISE as administratre
 
     ```
@@ -103,7 +120,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
         New-RdsTenant -Name <TenantName> -AadTenantID <DirectoryID> -AzureSubscriptionID <SubscriptionID>
     
     ```
-    
+
     ```
         Note:- Provide any name for Tenant, copy DirectoryID/TenantID from Azure Active Directory and SubscriptionID from Azure portal 
     ```
@@ -112,6 +129,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
     ![AddTenant](Images/12.png)
 
 * Copy tenant name
+
 
 ### Step 4:- Deploy Windows Virtual Desktop in Azure
 
@@ -126,7 +144,9 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
     ![WVD1](Images/14.png)
 
 ```
-        Note:- Pooled:- When you want multiple users (session) to access same VM. Personal :- When one user access the VM. 
+        Note:- 
+        Pooled:- When you want multiple users (session) to access same VM. 
+        Personal :- When one user access the VM. 
 ```
 
 * Click "Next : Configure virtual machines > ". Provide Usgae Profile, Total users, VM size etc. Depending on usgae profile and Total users, Azure recommends the VM size. However you can change the VM size.
@@ -145,7 +165,28 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![WVD5](Images/18.png)
 
+* Wait till WVD pool is provisioned
 
+    ![WVD6](Images/19.png)
 
+### Step 5:- Access Windows Virtual Desktop over web
+
+* Goto http://aka.ms/wvdweb
+
+* Login with the account created earlier
+
+    ![Screen6](Images/20.png)
+
+* Click on the pool. Click Allow to give access to mentioned resources
+
+    ![Screen7](Images/21.png)
+
+* Provide credential 
+
+    ![Screen8](Images/22.png)
+
+* Congratulations, you logged in Windows Virtual Desktop
+
+    ![Screen9](Images/23.png)
 
 
