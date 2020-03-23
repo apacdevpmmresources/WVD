@@ -8,7 +8,7 @@ COVID-19 pandemic made many organization to let their employee work from home. T
 
     1 Seamless multi-user Windows 10 user experience
     2 Scalability 
-    3 Access from  anywhere. Supporting any end user device platform like Windows, Android, Mac, iOS, and HTML 5
+    3 Access from anywhere. Supporting any end user device platform like Windows, Android, Mac, iOS, and HTML 5
     4 Secure    
     5 Cost effective
     6 Ease of provisiong virtual desktop environment
