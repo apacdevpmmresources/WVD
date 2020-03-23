@@ -54,21 +54,21 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
 * Provision [Azure Active Directory Domain Services](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance).
 
-    [![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frawatsudhir1%2FWVD%2Fmaster%2FDeploy_Microsoft_DomainServices%2Ftemplate.json)
+* Search Azure AD Domain Serivces, select and click create
 
-* Click "Deploy to Azure"
+    ![Setup AADDS](Images/4.png)
 
-    ![Aetup AADDS](Images/4.png)
+* Provide subscription name, DNS domain name etc and click Create
 
-* Replace XXXX with real value
-
-* Accept "Terms and Conditions" 
-
-* Click Purchase
+    ![Setup AADDS1](Images/5.png)
 
 * It will take sometime to provision Azure Active Directory Domain Services
 
-    ![Progressing](Images/5.png)
+* Once Azure AD Domain Services is created
+
+    ![Progress](Images/6.png)
+
+
 
 * ********************
 
