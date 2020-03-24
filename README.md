@@ -1,8 +1,8 @@
 # WVD :- Windows Virtual Desktop
 
-COVID-19 pandemic made many organization to let their employee work from home. The main challenge for any organization is to make sure their employees are as productive as they are in office. This will include security, access to domain resources, sacalability, reduce managebility and spin up quickly etc.
+The current COVID-19 pandemic situation has made many organizations to let their employees work at home. The main challenge for any organization is to make sure their employees are as productive as they are in office. This will include security, access to domain resources, scalability, reduce managebility and spin up quickly.
 
-[Microsoft Azure Windows Virtual Desktop aka WVD](https://azure.microsoft.com/en-us/services/virtual-desktop/) is a service on Azure that could be one part of a COVID-19 response plan. With WVD, we no longer need to be concerned with the constraints of the physical hardware or a person's location.
+[Microsoft Azure Windows Virtual Desktop aka WVD](https://azure.microsoft.com/services/virtual-desktop/) is a service on Azure that could be one part of a COVID-19 response plan. With WVD, we no longer need to be concerned with the constraints of the physical hardware or a person's location.
 
 # Benefits of WVD 
 
@@ -11,27 +11,27 @@ COVID-19 pandemic made many organization to let their employee work from home. T
     3 Access from anywhere. Supporting any end user device platform like Windows, Android, Mac, iOS, and HTML 5
     4 Secure    
     5 Cost effective
-    6 Ease of provisiong virtual desktop environment
+    6 Ease of provisioning virtual desktop environment
     7 Maintainability 
-    8 Use exisitng image from gallery or bring your own image
+    8 Use exisitng OS image from gallery or bring your own image
 
-# Azure or/and Office 365
+# Azure and/or Office 365
 
     - If you’re using any Microsoft 365 services, sign in to the Azure portal using the credentials for tenant. 
-      However many other serives which is required for WVD are not part of Microsoft 365 
+      Note: To use WVD, Azure subscription is needed.
 
-    - Microsoft 365 Business is one of the eligible plans that supports WVD, access Windows 10 Enterprise and Windows 7    Enterprise at no additional cost
+    - Microsoft 365 Business is one of the eligible plans that supports WVD, access Windows 10 Enterprise and Windows 7 Enterprise at no additional cost.
 
-    - For small and trial environment, Please [use this link](https://azure.microsoft.com/en-us/free/) to spin up a new    Microsoft Azure Account. Use Azure Active Directory Domain Services to sync with Azure AD. 
+    - For small environment or trial purpose, Please [use this link](https://azure.microsoft.com/en-us/free/) to spin up a new Microsoft Azure Account. Use Azure Active Directory Domain Services to sync with Azure AD. 
 
 # Windows Virtual Desktop Pricing
 
-* Please click [here](https://azure.microsoft.com/en-us/pricing/calculator/?service=virtual-desktop#virtual-desktop632ccf50-9f35-4e0f-ab0d-6deb564d5300) for WVD pricing
+* Please click [here](https://azure.microsoft.com/pricing/calculator/?service=virtual-desktop#virtual-desktop632ccf50-9f35-4e0f-ab0d-6deb564d5300) for WVD pricing
 
 
 # Provision Windows Virtual Desktop in Azure
 
-In this blog post I will be using my MSDN subscription to spin up the WVD instead of my official subscription (as I am not an administrator on my offical subscription). That's means I already have my tenant and AAD setup.  
+You require administrator access on Azure to provision WVD. In this blog post I will be using my MSDN subscription to spin up the WVD.
 
 ## Steps to spin Windows Virtual Desktop. 
 
@@ -49,7 +49,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
 * Open http://portal.azure.com in a web browser
 
-* Once loggedin, click Azure Active Directory from left side pane
+* Once logged in, click `Azure Active Directory` from left side pane
 
 * Click Users and then "+ New User"
 
@@ -105,7 +105,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![Configured](Images/8.png)
 
-* Let's enable user account for Azure Active Directory Domain Services. In this case it's cloud only user which we created earlier. For other scenarios please refer [here](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance)
+* Let's enable user account for Azure Active Directory Domain Services by configuring the password of the created user. Note that the created account is a basic cloud-only user account. For more details on other types of accounts, please refer [here](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance)
 
 * Goto https://myapps.microsoft.com
 
@@ -138,7 +138,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![Adduser](Images/11-2.png)
 
-* Run Windows PowerShell ISE as administratre
+* Run Windows PowerShell ISE as administrator
 
     ```
         Import-module Microsoft.Rdinfra.RdPowershell
@@ -158,7 +158,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 * Copy tenant name
 
 
-### Step 4:- Deploy Windows Virtual Desktop in Azure
+### Step 4:- Deploy Windows Virtual Desktop on Azure
 
 * Goto Azure portal and search for "Windows Virtual Desktop" and Select "Windows Virtual Desktop - Provision a host pool"
 
@@ -173,10 +173,10 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 ```
         Note:- 
         Pooled:- When you want multiple users (session) to access same VM. 
-        Personal :- When one user access the VM. 
+        Personal :- When one user accesses the VM. 
 ```
 
-* Click "Next : Configure virtual machines > ". Provide Usgae Profile, Total users, VM size etc. Depending on usgae profile and Total users, Azure recommends the VM size. However you can change the VM size.
+* Click "Next : Configure virtual machines > ". Provide Usage Profile, Total users, VM size etc. Depending on usage profile and Total users, Azure recommends the VM size. However you can change the VM size.
 
     ![WVD2](Images/15.png)
 
@@ -184,7 +184,7 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
 
     ![WVD3](Images/16.png)
 
-* Provide "Windows Virtual Desktop tenant name" created in ealrier step, UPN/Service principal. Click "Next : Review + create >"
+* Provide "Windows Virtual Desktop tenant name" created in earlier step, UPN/Service principal. Click "Next : Review + create >"
 
     ![WVD4](Images/17.png)
 
@@ -221,3 +221,8 @@ In this blog post I will be using my MSDN subscription to spin up the WVD instea
     ![WVD1](Images/24.jpg) ![WVD2](Images/25.jpg)
     ![WVD1](Images/26.jpg) ![WVD2](Images/27.jpg)
     ![WVD1](Images/28.jpg)
+
+# Resources
+
+- [Microsoft Learn - Learning Paths for Windows Virtual Desktop](https://docs.microsoft.com/en-us/learn/paths/m365-wvd/)
+- [Windows Virtual Desktop videos on YouTube - Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries/search?query=windows+virtual+desktop)
